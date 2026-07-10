@@ -1,0 +1,379 @@
+/* ===========================
+   TITI HAIR SALOON
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#090909;
+color:#ffffff;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(0,0,0,.95);
+backdrop-filter:blur(10px);
+z-index:999;
+border-bottom:1px solid #caa44d;
+}
+
+.logo h2{
+color:#d4af37;
+font-size:30px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:35px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:17px;
+transition:.4s;
+}
+
+nav ul li a:hover{
+color:#d4af37;
+}
+
+.language button{
+background:none;
+border:2px solid #d4af37;
+color:#d4af37;
+width:45px;
+height:45px;
+border-radius:50%;
+cursor:pointer;
+font-size:18px;
+transition:.4s;
+}
+
+.language button:hover{
+background:#d4af37;
+color:#000;
+}
+
+.hero{
+height:100vh;
+background:url("hero.jpg") center center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.overlay{
+background:rgba(0,0,0,.65);
+padding:40px;
+border-radius:20px;
+max-width:900px;
+animation:fadeUp 1.2s ease;
+}
+
+.overlay h1{
+font-size:65px;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.overlay p{
+font-size:20px;
+line-height:1.8;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 40px;
+background:#d4af37;
+color:black;
+font-weight:700;
+border-radius:50px;
+text-decoration:none;
+transition:.4s;
+}
+
+.btn:hover{
+background:white;
+transform:translateY(-5px);
+}
+.about{
+padding:100px 10%;
+text-align:center;
+background:#111;
+}
+
+.about h2{
+font-size:42px;
+color:#d4af37;
+margin-bottom:35px;
+}
+
+.about p{
+font-size:18px;
+line-height:2;
+max-width:1100px;
+margin:20px auto;
+color:#ddd;
+}
+
+.info{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+padding:80px 10%;
+background:#0d0d0d;
+}
+
+.info-box{
+background:#171717;
+padding:40px;
+border-radius:18px;
+text-align:center;
+border:1px solid #d4af37;
+transition:.4s;
+}
+
+.info-box:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(212,175,55,.4);
+}
+
+.info-box i{
+font-size:45px;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.info-box h3{
+font-size:28px;
+margin-bottom:15px;
+color:#d4af37;
+}
+
+.info-box p,
+.info-box a{
+font-size:18px;
+text-decoration:none;
+color:#fff;
+line-height:1.8;
+}
+
+.info-box a:hover{
+color:#d4af37;
+}
+
+.statistics{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+padding:90px 10%;
+background:#111;
+}
+
+.stat-box{
+background:#181818;
+padding:35px;
+border-radius:18px;
+text-align:center;
+border:1px solid #d4af37;
+transition:.4s;
+}
+
+.stat-box:hover{
+transform:scale(1.05);
+}
+
+.stat-box h2{
+font-size:55px;
+color:#d4af37;
+margin-bottom:10px;
+}
+
+.stat-box p{
+font-size:18px;
+color:white;
+}
+
+footer{
+padding:50px 10%;
+text-align:center;
+background:#050505;
+border-top:1px solid #d4af37;
+}
+
+footer h2{
+color:#d4af37;
+margin-bottom:15px;
+}
+
+footer p{
+margin:10px 0;
+}
+.social-icons{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:25px;
+margin:30px 0;
+}
+
+.social-icons a{
+width:65px;
+height:65px;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#111;
+border:2px solid #d4af37;
+border-radius:50%;
+text-decoration:none;
+font-size:28px;
+color:#d4af37;
+transition:.4s;
+}
+
+.social-icons a:hover{
+background:#d4af37;
+color:#000;
+transform:translateY(-8px) scale(1.08);
+box-shadow:0 0 25px rgba(212,175,55,.7);
+}
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(60px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes zoomIn{
+
+0%{
+opacity:0;
+transform:scale(.8);
+}
+
+100%{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+@media(max-width:991px){
+
+header{
+
+padding:18px 5%;
+flex-direction:column;
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+justify-content:center;
+gap:18px;
+
+}
+
+.overlay h1{
+
+font-size:45px;
+
+}
+
+.overlay p{
+
+font-size:17px;
+
+}
+
+.about,
+.info,
+.statistics,
+footer{
+
+padding:70px 5%;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.logo h2{
+
+font-size:24px;
+
+}
+
+.overlay{
+
+padding:25px;
+
+}
+
+.overlay h1{
+
+font-size:34px;
+
+}
+
+.overlay p{
+
+font-size:15px;
+line-height:1.8;
+
+}
+
+.btn{
+
+padding:14px 28px;
+font-size:15px;
+
+}
+
+.info-box,
+.stat-box{
+
+padding:25px;
+
+}
+
+.social-icons a{
+
+width:55px;
+height:55px;
+font-size:24px;
+
+}
+
+}
